@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h2 How to use
+  p Add either a date string or a unix date to the baseurl. The app will return some json. 
+  p Sample urls:
+  p
+    code #{url}/December%2015,%202015
+    br
+    code #{url}/1450137600
+  
