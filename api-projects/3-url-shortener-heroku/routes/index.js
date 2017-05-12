@@ -8,7 +8,7 @@ var assert = require('assert');
 var mongoURL = process.env.MONGOLAB_URL;
 
 // NB Change this before hosting on heroku
-var baseURL = "localhost:3000/"
+var baseURL = "https://fathomless-basin-29562.herokuapp.com/"
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
