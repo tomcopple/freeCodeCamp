@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= title
+    p This is the webpage for the Free Code Camp File Metadata Microservice API Project
+    h2 How it works
+    p Submit a file to view its filesize
+    form#fileForm(action = "/results" enctype="multipart/form-data" method = "POST" name="fileForm")
+        input#chooseButton(type="file" name="uploadFile")
+        input#submitButton(type="submit")
+    p NB There is a maximum file size limit of ~10 MB. 
+
